@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.layer == 9)
         {
+            scoreManager.instance.AddScore(1);
             Destroy(other.gameObject);
         }
     }
